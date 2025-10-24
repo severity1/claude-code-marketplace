@@ -1,0 +1,21 @@
+{
+  "name": "claude-code-marketplace",
+  "owner": {
+    "name": "severity1",
+    "email": "johnreilly.pospos@gmail.com"
+  },
+  "metadata": {
+    "description": "A marketplace for Claude Code maintained by severity1.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "claude-code-prompt-improver",
+      "source": {
+        "source": "github",
+        "repo": "severity1/claude-code-prompt-improver"
+      },
+      "description": "Enriches vague prompts with research-based clarifying questions before Claude Code executes them."
+    }
+  ]
+}

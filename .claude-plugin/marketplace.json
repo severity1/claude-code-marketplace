@@ -10,7 +10,7 @@
   },
   "plugins": [
     {
-      "name": "claude-code-prompt-improver",
+      "name": "prompt-improver",
       "source": {
         "source": "github",
         "repo": "severity1/claude-code-prompt-improver"

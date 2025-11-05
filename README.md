@@ -39,40 +39,23 @@ Edit `.claude-plugin/marketplace.json` and add your plugin to the `plugins` arra
 
 ```json
 {
-  "name": "your-plugin-name",
+  "name": "prompt-improver",
   "source": {
-    "source": "github",
-    "repo": "your-github-username/your-plugin-repo"
+    "source": "url",
+    "url": "https://github.com/severity1/claude-code-prompt-improver.git"
   },
-  "description": "Brief description of what your plugin does"
+  "description": "Type vibes, ship precision. Enriches vague/vibe-y prompts with research-based clarifying questions before Claude Code executes them."
 }
 ```
 
 ### Required Fields
 - `name`: Plugin identifier (kebab-case, no spaces)
-- `source`: GitHub repository location
+- `source`: Git repository location
 - `description`: Clear, concise plugin description
 
 ### Optional Fields
 
-Add these to improve discoverability and provide more information:
-
-```json
-{
-  "name": "your-plugin-name",
-  "source": {
-    "source": "github",
-    "repo": "your-github-username/your-plugin-repo"
-  },
-  "description": "Brief description of what your plugin does",
-  "version": "1.0.0",
-  "author": "Your Name",
-  "homepage": "https://github.com/your-github-username/your-plugin-repo",
-  "license": "MIT",
-  "keywords": ["productivity", "automation"],
-  "category": "tools"
-}
-```
+For additional fields like `version`, `author`, `homepage`, `license`, `keywords`, and `category`, see the [Plugin Marketplaces Guide](https://docs.claude.com/en/docs/claude-code/plugin-marketplaces.md).
 
 ### 3. Submit a Pull Request
 
@@ -97,7 +80,17 @@ Plugin submissions will be reviewed for:
 
 Plugins can be sourced from:
 
-**GitHub (recommended):**
+**Git URL:**
+```json
+"source": {
+  "source": "url",
+  "url": "https://github.com/owner/repo-name.git"
+}
+```
+
+Note: URL source uses HTTPS and does not require SSH key configuration.
+
+**GitHub:**
 ```json
 "source": {
   "source": "github",
@@ -105,13 +98,7 @@ Plugins can be sourced from:
 }
 ```
 
-**Git URL:**
-```json
-"source": {
-  "source": "url",
-  "url": "https://gitlab.com/team/plugin.git"
-}
-```
+Note: GitHub source requires SSH key access to be configured on your system.
 
 **Relative path (for local development):**
 ```json

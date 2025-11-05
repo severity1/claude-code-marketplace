@@ -12,8 +12,8 @@
     {
       "name": "prompt-improver",
       "source": {
-        "source": "url",
-        "url": "https://github.com/severity1/claude-code-prompt-improver.git"
+        "source": "github",
+        "url": "severity1/claude-code-prompt-improver"
       },
       "description": "Enriches vague prompts with research-based clarifying questions before Claude Code executes them."
     }

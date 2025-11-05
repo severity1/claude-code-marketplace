@@ -11,7 +11,7 @@ This marketplace provides a curated collection of Claude Code plugins that exten
 To add this marketplace to your Claude Code installation:
 
 ```bash
-claude marketplace add https://github.com/severity1/claude-code-marketplace
+claude plugin marketplace add severity1/claude-code-marketplace
 ```
 
 ## Available Plugins

@@ -16,6 +16,14 @@
         "url": "https://github.com/severity1/claude-code-prompt-improver.git"
       },
       "description": "Type vibes, ship precision. Enriches vague/vibe-y prompts with research-based clarifying questions before Claude Code executes them."
+    },
+    {
+      "name": "auto-memory",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/severity1/claude-code-auto-memory.git"
+      },
+      "description": "Your CLAUDE.md, always in sync. Zero tokens. Zero config. Just works."
     }
   ]
 }

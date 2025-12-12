@@ -1,6 +1,6 @@
-# Claude Code Marketplace
+# Severity1 Claude Code Marketplace
 
-A marketplace for Claude Code plugins maintained by severity1.
+A marketplace for Claude Code plugins by severity1.
 
 ## What is This?
 
@@ -11,7 +11,40 @@ This marketplace provides a curated collection of Claude Code plugins that exten
 To add this marketplace to your Claude Code installation:
 
 ```bash
-claude plugin marketplace add severity1/claude-code-marketplace
+claude plugin marketplace add severity1/severity1-marketplace
+```
+
+## Migrating from claude-code-marketplace
+
+If you previously installed this marketplace under the old name:
+
+### Step 1: Uninstall plugins from the old marketplace
+
+```bash
+# List plugins installed from the old marketplace
+claude plugin list
+
+# Uninstall each plugin (example)
+claude plugin uninstall prompt-improver
+claude plugin uninstall auto-memory
+```
+
+### Step 2: Remove the old marketplace and add the new one
+
+```bash
+# Remove the old marketplace
+claude plugin marketplace remove severity1/claude-code-marketplace
+
+# Add the new marketplace
+claude plugin marketplace add severity1/severity1-marketplace
+```
+
+### Step 3: Reinstall your plugins
+
+```bash
+# Install plugins from the new marketplace
+claude plugin install prompt-improver
+claude plugin install auto-memory
 ```
 
 ## Available Plugins

@@ -24,6 +24,14 @@
         "url": "https://github.com/severity1/claude-code-auto-memory.git"
       },
       "description": "Your CLAUDE.md, always in sync. Zero tokens. Zero config. Just works."
+    },
+    {
+      "name": "this-little-wiggy",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/severity1/this-little-wiggy.git"
+      },
+      "description": "Intercepts complex tasks and wraps them with project-specific completion criteria for autonomous ralph-loop execution."
     }
   ]
 }
